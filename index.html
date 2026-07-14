@@ -7,6 +7,60 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <p>test</p>
+    <div id="mainContainer">
+      <div id="heroPanel">
+        Odin logo
+      </div>
+      <div id="formPanel">
+        <section class="section-panel">
+
+          <p>This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up 
+          now to get started.</p>
+          
+          <p>You know you want to.</p>
+        </section>
+
+        <section class="section-panel form-section">
+          <p>Let's do this!</p>
+
+          <div id="formWrapper">
+            <div id="formColumn1">
+              <div class="form-input">
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName">
+              </div>
+              <div class="form-input">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email">
+              </div>
+              <div class="form-input">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$" required>
+              </div>
+            </div>
+
+            <div id="formColumn2">
+              <div class="form-input">
+                <label for="lastName">LAST NAME</label>
+                <input type="text" id="lastName">
+              </div>  
+              <div class="form-input">
+                <label for="phoneNum">PHONE NUMBER</label>
+                <input type="tel" id="phoneNum">
+              </div>
+              <div class="form-input">
+                <label for="passwordConf">CONFIRM PASSWORD</label>
+                <input type="password" id="passwordConf" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$" required>
+              </div>
+            </div>
+          </div>  
+        </section>
+
+        <section class="section-panel">
+          <button type="submit">Create Account</button>
+          <p class="small_text">Already have an account? Log in</p>    
+        </section>
+    </div>
 </body>
 </html>
